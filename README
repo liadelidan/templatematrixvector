@@ -1,0 +1,37 @@
+Liad Elidan
+203380050
+ex3
+
+Results of 50x50 matrix from my work:
+matlib mult 0.002772
+matlib add 9.2e-05
+
+Results of 50x50 matrix from the library:
+eigen mult 0.001312
+eigen add 4e-05
+
+Results of 500x500 matrix from my work:
+matlib mult 2.62487
+matlib add 0.008027
+
+Results of 500x500 matrix from the library:
+eigen mult 0.953508
+eigen add 0.006539
+
+Which program runs faster:
+
+add - 50x50 : The eigen is faster.
+add - 500x500 : The eigen is faster.
+
+mult - 50x50 : The eigen is faster.
+mult - 500x500 : The eigen is faster.
+
+There is a difference between the adding and mult methods.
+The difference is because when we add we go through one loop
+while in the mult we go through 3 loops which run over each value.
+
+The difference between 50x50 to 500x500 is that our methods need to go over
+more values, and so takes longer to compute.
+
+Eigen library is faster because it is optimized and uses the fastest
+algorithms.
